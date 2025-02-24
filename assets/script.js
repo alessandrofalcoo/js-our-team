@@ -36,3 +36,6 @@ const teamMembers = [
     img: "img/female3.png"
   }
 ];
+
+const h5El = document.querySelector('h5')
+h5El.toUpperCase();
