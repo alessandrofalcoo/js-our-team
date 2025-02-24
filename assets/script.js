@@ -41,18 +41,18 @@ const cardsEl = document.querySelector('.cards');
 
 function addMembers(img, name, role, email) {
   cardsEl.innerHTML += `<div class="card mb-3 bg-black text-white">
-                <div class="row g-0">
+                  <div class="row">
                     <div class="col-4">
                         <img src="./assets/${img}" class="img-fluid" alt="">
                     </div>
-                    <div class="col-8">
+                    <div class="col-8 col-sm-10 col-md-8">
                         <div class="card-body">
                             <h5 class="card-title">${name}</h5>
                             <p class="card-text">${role}</p>
                             <p class="card-text text-primary">${email}</p> 
                         </div>
                       </div>
-                </div>
+                  </div>
               </div>
             </div> 
 `
