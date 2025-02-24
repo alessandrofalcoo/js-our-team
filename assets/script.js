@@ -37,14 +37,31 @@ const teamMembers = [
   }
 ];
 
-const cardEl = document.querySelector('.card');
+const cardsEl = document.querySelector('.cards');
+
+function addMembers(img, name, role, email) {
+  cardsEl.innerHTML += `<div class="card mb-3" style="max-width: 400px;">
+            <div class="row g-0">
+                <div class="col-4">
+                    <img src="${img}" class="img-fluid rounded-start">
+                </div>
+                <div class="col-8">
+                    <div class="card-body">
+                        <h5 class="card-title">${name}</h5>
+                        <p class="card-text">${role}</p>
+                        <p class="card-text"><small type="email" class="text-body-secondary"></small>${email}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+`
+}
 
 for (let i = 0; i < teamMembers.length; i++) {
   const thisMember = teamMembers[i];
-  const name = teamMembers[i].name;
-  console.log(name);
-  
-  const role = teamMembers[i].role;
-  const email = teamMembers[i].email;
-  const img = teamMembers[i].img;
+  const name = thisMember.name;
+  const role = thisMember.role;
+  const email = thisMember.email;
+  const img = thisMember.img;
+  addMembers(img, name, role, email);
 }
