@@ -60,7 +60,7 @@ function addMembers(img, name, role, email) {
 
 for (let i = 0; i < teamMembers.length; i++) {
   const thisMember = teamMembers[i];
-  const name = thisMember.name;
+  const name = thisMember.name.toUpperCase();
   const role = thisMember.role;
   const email = thisMember.email;
   const img = thisMember.img;
