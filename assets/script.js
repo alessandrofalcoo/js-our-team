@@ -37,5 +37,14 @@ const teamMembers = [
   }
 ];
 
-const h5El = document.querySelector('h5')
-h5El.toUpperCase();
+const cardEl = document.querySelector('.card');
+
+for (let i = 0; i < teamMembers.length; i++) {
+  const thisMember = teamMembers[i];
+  const name = teamMembers[i].name;
+  console.log(name);
+  
+  const role = teamMembers[i].role;
+  const email = teamMembers[i].email;
+  const img = teamMembers[i].img;
+}
