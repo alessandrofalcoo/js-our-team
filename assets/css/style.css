@@ -2,3 +2,8 @@
     color: #e53170;
     font-weight: bolder;
 }
+
+
+.cards{
+    gap: 1rem;
+}

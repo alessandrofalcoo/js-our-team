@@ -40,20 +40,21 @@ const teamMembers = [
 const cardsEl = document.querySelector('.cards');
 
 function addMembers(img, name, role, email) {
-  cardsEl.innerHTML += `<div class="card mb-3" style="max-width: 400px;">
+  cardsEl.innerHTML += `<div class="card mb-3 bg-black text-white">
                 <div class="row g-0">
                     <div class="col-4">
-                        <img src="${img}" class="img-fluid rounded-start" alt="">
+                        <img src="./assets/${img}" class="img-fluid" alt="">
                     </div>
                     <div class="col-8">
                         <div class="card-body">
                             <h5 class="card-title">${name}</h5>
                             <p class="card-text">${role}</p>
-                            <p class="card-text">${email}</p>
+                            <p class="card-text text-primary">${email}</p> 
                         </div>
-                    </div>
+                      </div>
                 </div>
-            </div>
+              </div>
+            </div> 
 `
 }
 
